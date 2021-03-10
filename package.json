@@ -1,0 +1,11 @@
+{
+  "name": "github-explorer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "José Neto <joseantunes2001@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
