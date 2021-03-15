@@ -1,4 +1,12 @@
+import { RepositoryItem } from './RepositoryItem';
+
 import '../styles/repositories.scss';
+
+const repository = {
+  name: 'test repository',
+  description: 'test description',
+  link: 'https://github.com'
+}
 
 export function RepositoryList() {
   return (
@@ -6,45 +14,9 @@ export function RepositoryList() {
       <h1>List of repositories</h1>
 
       <ul>
-        <li>
-          <strong>repository name</strong>
-
-          <p>repository description</p>
-
-          <a href="">
-            Access repository
-          </a>
-        </li>
-
-        <li>
-          <strong>repository name</strong>
-
-          <p>repository description</p>
-
-          <a href="">
-            Access repository
-          </a>
-        </li>
-
-        <li>
-          <strong>repository name</strong>
-
-          <p>repository description</p>
-
-          <a href="">
-            Access repository
-          </a>
-        </li>
-
-        <li>
-          <strong>repository name</strong>
-
-          <p>repository description</p>
-
-          <a href="">
-            Access repository
-          </a>
-        </li>
+        <RepositoryItem repository={repository} />
+        <RepositoryItem repository={repository} />
+        <RepositoryItem repository={repository} />
       </ul>
     </section>
   );
